@@ -7,8 +7,8 @@ import { BasicFormControl, EmailAddress, ExampleMultipleSelect, ExampleSelect, E
 import FooterCard from '../../../Forms/FormControl/Common/FooterCard';
 import { CardFooter } from 'reactstrap'
 import { Btn } from "../../../../AbstractElements";
-import { FileUploader } from "react-drag-drop-files";
-const fileTypes = ["JPG", "PNG", "GIF", "PDF"];
+// import { FileUploader } from "react-drag-drop-files";
+// const fileTypes = ["JPG", "PNG", "GIF", "PDF"];
 
 
 const Create = () => {
@@ -164,7 +164,7 @@ const Create = () => {
                                         </Col>
                                     </Row>
                                     <Row>
-                                        <Col xl = '12'>
+                                        {/* <Col xl = '12'>
                                             <div>
                                                 <Label>Product Description</Label>
                                                 <FileUploader
@@ -174,7 +174,7 @@ const Create = () => {
                                                     types={fileTypes}
                                                 />
                                             </div>
-                                        </Col>
+                                        </Col> */}
                                     </Row>
                                     <Row>
                                         <Col xl = '6'>
