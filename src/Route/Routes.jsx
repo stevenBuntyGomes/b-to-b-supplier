@@ -240,8 +240,11 @@ import OnGoingProject from '../Components/Application/Ecommerce/ManageProject/On
 import CenceledProject from '../Components/Application/Ecommerce/ManageProject/CenceledProject';
 import ProjectStatus from '../Components/Application/Ecommerce/ManageProject/ProjectStatus';
 import PI from '../Components/Application/Ecommerce/Payments/PI/Index';
+import PICreate from '../Components/Application/Ecommerce/Payments/PI/Create';
 import TaxInvoice from '../Components/Application/Ecommerce/Payments/TaxInvoice/Index';
-import CreditDebitNote from '../Components/Application/Ecommerce/Payments/Creadit/DebitNote/Index';
+import CreateTaxInvoice from '../Components/Application/Ecommerce/Payments/TaxInvoice/Create';
+import CreditDebitNote from '../Components/Application/Ecommerce/Payments/Creadit/Index';
+import CreateCreditDebitNote from '../Components/Application/Ecommerce/Payments/Creadit/Create';
 import PackagingList from '../Components/Application/Ecommerce/ShippingDocuments/PackegingList/Index';
 import PO from '../Components/Application/Ecommerce/ShippingDocuments/PO';
 import COO from '../Components/Application/Ecommerce/ShippingDocuments/COO/Index';
@@ -413,8 +416,11 @@ export const routes = [
   // manage project
   // payment starts
   { path: `${process.env.PUBLIC_URL}/app/ecommerce/pi/:layout`, Component: <PI /> },
+  { path: `${process.env.PUBLIC_URL}/app/ecommerce/pi/create/:layout`, Component: <PICreate /> },
   { path: `${process.env.PUBLIC_URL}/app/ecommerce/tax-invoice/:layout`, Component: <TaxInvoice /> },
+  { path: `${process.env.PUBLIC_URL}/app/ecommerce/create-tax-invoice/:layout`, Component: <CreateTaxInvoice /> },
   { path: `${process.env.PUBLIC_URL}/app/ecommerce/credit-debit-note/:layout`, Component: <CreditDebitNote /> },
+  { path: `${process.env.PUBLIC_URL}/app/ecommerce/create-credit-debit-note/:layout`, Component: <CreateCreditDebitNote /> },
   
   // payment ends
   // shipping documents

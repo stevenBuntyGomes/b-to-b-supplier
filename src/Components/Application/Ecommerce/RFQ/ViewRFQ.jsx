@@ -56,22 +56,22 @@ const ViewRFQ = () => {
                                                 </Label>
                                             </div>
                                             <div className='checkbox checkbox-dark'>
-                                                <Input id='inline-3' type='checkbox' defaultChecked />
-                                                <Label for='inline-3'>
+                                                <Input id='inline-4' type='checkbox' defaultChecked />
+                                                <Label for='inline-4'>
                                                 {Option}
                                                 <span className='digits bg-warning p-2 rounded'> {'Draft'}</span>
                                                 </Label>
                                             </div>
                                             <div className='checkbox checkbox-dark'>
-                                                <Input id='inline-3' type='checkbox' defaultChecked />
-                                                <Label for='inline-3'>
+                                                <Input id='inline-5' type='checkbox' defaultChecked />
+                                                <Label for='inline-5'>
                                                 {Option}
                                                 <span className='digits bg-danger p-2 rounded'> {'Deleted'}</span>
                                                 </Label>
                                             </div>
                                             <div className='checkbox checkbox-dark'>
-                                                <Input id='inline-3' type='checkbox' defaultChecked />
-                                                <Label for='inline-3'>
+                                                <Input id='inline-6' type='checkbox' defaultChecked />
+                                                <Label for='inline-6'>
                                                 {Option}
                                                 <span className='digits bg-danger p-2 rounded'> {'Select All'}</span>
                                                 </Label>

@@ -2,6 +2,7 @@ import React from 'react';
 import { Btn, H6, Image } from '../../../../AbstractElements';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { FaFilePdf } from 'react-icons/fa';
+import { Input, Label } from 'reactstrap';
 const style = {
   width: 40,
   height: 40,
@@ -763,11 +764,17 @@ export const inqueryReceivedData = [
             ),
 
             action: (
-                <div>
-                    {/* <span> */}
-                    <Btn attrBtn={{ style: style2, color: 'primary', className: 'btn btn-xs', type: 'button' }}>Select</Btn>
-                    {/* </span> */}
-
+                <div className="mb-2">
+                    <Input className="form-control form-control-primary-fill btn-square" name="select" type="select">
+                        <option value="opt1">Select</option>
+                        <option value="opt2">Type 2</option>
+                        <option value="opt3">Type 3</option>
+                        <option value="opt4">Type 4</option>
+                        <option value="opt5">Type 5</option>
+                        <option value="opt6">Type 6</option>
+                        <option value="opt7">Type 7</option>
+                        <option value="opt8">Type 8</option>
+                    </Input>
                 </div>
             ),
     },

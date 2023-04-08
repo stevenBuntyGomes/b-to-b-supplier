@@ -3,6 +3,8 @@ import { Btn, H6, Image } from '../../../../AbstractElements';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { FaFilePdf } from 'react-icons/fa';
 import { faDownload } from '@fortawesome/free-solid-svg-icons';
+import { Input, Label } from 'reactstrap';
+
 const style = {
   width: 40,
   height: 40,

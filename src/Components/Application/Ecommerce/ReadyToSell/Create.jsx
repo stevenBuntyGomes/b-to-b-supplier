@@ -7,6 +7,7 @@ import { BasicFormControl, EmailAddress, ExampleMultipleSelect, ExampleSelect, E
 import FooterCard from '../../../Forms/FormControl/Common/FooterCard';
 import { CardFooter } from 'reactstrap'
 import { Btn } from "../../../../AbstractElements";
+import Dropzone from 'react-dropzone';
 // import { FileUploader } from "react-drag-drop-files";
 // const fileTypes = ["JPG", "PNG", "GIF", "PDF"];
 
@@ -164,17 +165,19 @@ const Create = () => {
                                         </Col>
                                     </Row>
                                     <Row>
-                                        {/* <Col xl = '12'>
-                                            <div>
-                                                <Label>Product Description</Label>
-                                                <FileUploader
-                                                    multiple={true}
-                                                    handleChange={handleUploadFile}
-                                                    name="file"
-                                                    types={fileTypes}
-                                                />
-                                            </div>
-                                        </Col> */}
+                                        <Col xl = '12'>
+                                            <Label htmlFor="exampleFormControlSelect9">Drag & Drop Files</Label>
+                                            <Dropzone onDrop={acceptedFiles => console.log(acceptedFiles)}>
+                                                {({getRootProps, getInputProps}) => (
+                                                    <section>
+                                                        <div {...getRootProps()}>
+                                                            <input {...getInputProps()} />
+                                                            <img style={{ height: '100px', }} src = {`${process.env.PUBLIC_URL}/drag-drop-file-upload.png`} />
+                                                        </div>
+                                                    </section>
+                                                )}
+                                            </Dropzone>
+                                        </Col>
                                     </Row>
                                     <Row>
                                         <Col xl = '6'>

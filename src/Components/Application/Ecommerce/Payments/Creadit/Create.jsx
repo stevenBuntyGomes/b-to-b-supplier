@@ -14,13 +14,13 @@ import { piColumn, data, inputColumn } from '../Data';
 
 const Create = () => {
   return (
-        <Fragment>
-        <Breadcrumbs parent="Ecommerce" title="PI" mainTitle="Tax Invoice" />
+    <Fragment>
+        <Breadcrumbs parent="Ecommerce" title="Debit/Credit Note" mainTitle="Debit/Credit Note" />
         <Container fluid={true}>
                 <Row>
                     <Col sm="12">
                         <Card>
-                            <HeaderCard title="Create Proforma Invoice" />
+                            <HeaderCard title="Create Debit/Credit Note" />
                             <Form className="form theme-form">
                                 <CardBody>
                                     <Row>
@@ -112,6 +112,24 @@ const Create = () => {
                                     <Row>
                                         <Col xl = '6'>
                                             <FormGroup>
+                                                <Label htmlFor="exampleFormControlSelect9">Select Note</Label>
+                                                <Input type="select" name="select" className="form-control digits" defaultValue="1">
+                                                    <option>{'Debit Note'}</option>
+                                                    <option>{'Credit Note'}</option>
+                                                </Input>
+                                            </FormGroup>
+
+                                        </Col>
+                                        <Col xl = '6'>
+                                            <FormGroup>
+                                                <Label htmlFor="exampleFormControlInput1">Reference Number(Debit/Credit)</Label>
+                                                <Input className="form-control" type="text" placeholder="Reference Number(Debit/Credit)" />
+                                            </FormGroup>
+                                        </Col>
+                                    </Row>
+                                    <Row>
+                                        <Col xl = '6'>
+                                            <FormGroup>
                                                 <Label htmlFor="exampleFormControlInput1">PO Number (auto fill)</Label>
                                                 <Input className="form-control" type="text" placeholder="PO Number" />
                                             </FormGroup>
@@ -128,15 +146,15 @@ const Create = () => {
                                     <Row>
                                         <Col xl = '6'>
                                             <FormGroup>
-                                                <Label htmlFor="exampleFormControlInput1">PI Number</Label>
-                                                <Input className="form-control" type="text" placeholder="PI Number" />
+                                                <Label htmlFor="exampleFormControlInput1">Invoice Number</Label>
+                                                <Input className="form-control" type="text" placeholder="Invoice Number" />
                                             </FormGroup>
 
                                         </Col>
                                         <Col xl = '6'>
                                             <FormGroup>
-                                                <Label htmlFor="exampleFormControlInput1">PI Date</Label>
-                                                <Input className="form-control" type="text" placeholder="PO Date" />
+                                                <Label htmlFor="exampleFormControlInput1">Invoice Date</Label>
+                                                <Input className="form-control" type="text" placeholder="Invoice Date" />
                                             </FormGroup>
                                             
                                         </Col>

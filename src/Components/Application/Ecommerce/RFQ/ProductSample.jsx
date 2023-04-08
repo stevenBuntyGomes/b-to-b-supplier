@@ -38,15 +38,15 @@ const ProductSample = () => {
                                         <div className='m-t-15 m-checkbox-inline custom-radio-ml'>
                                             
                                             <div className='checkbox checkbox-dark'>
-                                                <Input id='inline-3' type='checkbox' defaultChecked />
-                                                <Label for='inline-3'>
+                                                <Input id='inline-1' type='checkbox' defaultChecked />
+                                                <Label for='inline-1'>
                                                 {Option}
                                                 <span className='digits bg-success p-2 rounded'> {'Dispatched'}</span>
                                                 </Label>
                                             </div>
                                             <div className='checkbox checkbox-dark'>
-                                                <Input id='inline-3' type='checkbox' defaultChecked />
-                                                <Label for='inline-3'>
+                                                <Input id='inline-1' type='checkbox' defaultChecked />
+                                                <Label for='inline-1'>
                                                 {Option}
                                                 <span className='digits bg-danger p-2 rounded'> {'Canceled'}</span>
                                                 </Label>
