@@ -200,6 +200,7 @@ import ProductSample from '../Components/Application/Ecommerce/ProductSample/Pro
 // product sample
 // feedback part starts
 import Supplier from '../Components/Application/Ecommerce/Feedback/Supplier';
+import CreateFeedBack from '../Components/Application/Ecommerce/Feedback/Create';
 import Buyer from '../Components/Application/Ecommerce/Feedback/Buyer';
 // feedback part ends
 import KanbanBoardContain from '../Components/Application/KanbanBoard';
@@ -479,6 +480,7 @@ export const routes = [
   
 
   { path: `${process.env.PUBLIC_URL}/app/ecommerce/feedback-supplier/:layout`, Component: <Supplier /> },
+  { path: `${process.env.PUBLIC_URL}/app/ecommerce/create-feedback-supplier/:layout`, Component: <CreateFeedBack /> },
   { path: `${process.env.PUBLIC_URL}/app/ecommerce/feedback-buyer/:layout`, Component: <Buyer /> },
   // feedback part
   { path: `${process.env.PUBLIC_URL}/app/ecommerce/settings/:layout`, Component: <AccountSettings /> },

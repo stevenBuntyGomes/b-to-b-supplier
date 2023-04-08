@@ -193,7 +193,7 @@ export const MENUITEMS = [
         icon: 'maps',
         type: 'link',
         active: false,
-        path: `${process.env.PUBLIC_URL}/pages/authentication/feedback-supplier`, 
+        path: `${process.env.PUBLIC_URL}/app/ecommerce/feedback-supplier`, 
       },
       {
         title: 'Company',

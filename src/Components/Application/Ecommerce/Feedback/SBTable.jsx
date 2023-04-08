@@ -18,7 +18,7 @@ const style2 = { fontSize: 14, padding: 4, minWidth:100 };
 
 export const supplierColumn = [
     {
-        name: 'Buyer',
+        name: 'Vendor',
         selector: (row) => row.buyer,
         sortable: true,
         center: false,

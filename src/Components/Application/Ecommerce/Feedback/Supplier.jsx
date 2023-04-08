@@ -7,7 +7,7 @@ import HeaderCard from '../../../Common/Component/HeaderCard';
 // import {Btn} from '../../../AbstractElements'
 import {Btn} from '../../../../AbstractElements'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faThumbsUp, faThumbsDown, faExclamation, } from '@fortawesome/free-solid-svg-icons';
+import { faThumbsUp, faThumbsDown, faExclamation, faFile, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { API_ENDPOINT } from '../../../../Route/Routes';
 import DataTable from 'react-data-table-component';
 // import { Row, Col, Card, CardBody, FormGroup, Label, Input } from 'reactstrap';
@@ -18,6 +18,15 @@ const Supplier = () => {
     <Fragment>
         <Breadcrumbs parent={`${API_ENDPOINT}/app/ecommerce/new-supplier/Dubai`} title="Feedback" mainTitle="Feedback" />
         <CardHeader className='pt-0'>
+            <Btn link = {`${API_ENDPOINT}/app/ecommerce/create-feedback-supplier/Dubai`} attrBtn={{ color: "dark", className: "m-r-15", type: "submit" }} >
+                                    <FontAwesomeIcon className='me-2' icon={faFile}/> Create FeedBack
+                                </Btn>
+                                <Btn attrBtn={{ color: "danger", className: "m-r-15", type: "submit" }} >
+                                    <FontAwesomeIcon className='me-2' icon={faExclamation}/> Delete 
+                                </Btn>
+                                <Btn attrBtn={{ color: "success", className: "m-r-15", type: "submit" }} >
+                                    <FontAwesomeIcon className='me-2' icon={faEnvelope}/> Publish FeedBack
+                                </Btn>
             <Row>
                 <Col xl = "8">
                     <p>You can Provide your feedback in this page. You can provide feedback only with completing the project or cancled. Your feedback will be visable to public.</p>
