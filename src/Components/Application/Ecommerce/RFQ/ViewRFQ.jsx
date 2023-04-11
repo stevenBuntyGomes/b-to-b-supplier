@@ -21,7 +21,7 @@ const ViewRFQ = () => {
                         <Card>
                             <HeaderCard title="List of Inquiry received from the buyer in this page." span1="List of Inquiry received from the buyer in this page." />
                             <CardHeader className='mt-0'>
-                                <Btn link = {`${API_ENDPOINT}/app/ecommerce/edit-product/Dubai`} attrBtn={{ color: "primary", className: "m-r-15", type: "submit" }} >
+                                <Btn link = {`${API_ENDPOINT}/app/ecommerce/submit-quote-rfq/Dubai`} attrBtn={{ color: "primary", className: "m-r-15", type: "submit" }} >
                                     <FontAwesomeIcon className='me-2' icon={faPenSquare}/> Submit Quote
                                 </Btn>
                                 <Btn attrBtn={{ color: "danger", className: "m-r-15", type: "submit" }} >

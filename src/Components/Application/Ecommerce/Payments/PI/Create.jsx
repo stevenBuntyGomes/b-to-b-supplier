@@ -1,7 +1,6 @@
 import React, {Fragment, useState, useEffect} from 'react'
 import { Breadcrumbs, H6 } from '../../../../../AbstractElements';
 import { Card, CardBody, Col, Container, Row, Form, FormGroup, Label, Input } from 'reactstrap';
-// import HeaderCard from '../../../Common/Component/HeaderCard';
 import HeaderCard from '../../../../Common/Component/HeaderCard';
 import { BasicFormControl, EmailAddress, ExampleMultipleSelect, ExampleSelect, ExampleTextarea, Password } from '../../../../../Constant';
 import FooterCard from '../../../../Forms/FormControl/Common/FooterCard';
@@ -27,7 +26,6 @@ const Create = () => {
                                         <Col xl = '6'>
                                             <FormGroup>
                                                 <H6 htmlFor="exampleFormControlInput1">Exporter Details</H6>
-                                               
                                             </FormGroup>
                                         </Col>
                                         <Col xl = '6'>

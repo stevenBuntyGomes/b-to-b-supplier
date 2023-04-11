@@ -150,11 +150,13 @@ import ProductPage from '../Components/Application/Ecommerce/ProductPage';
 import PricingMemberShip from '../Components/Application/Ecommerce/PricingMemberShip';
 import PaymentDetails from '../Components/Application/Ecommerce/PaymentDetails';
 import InqueryReceived from '../Components/Application/Ecommerce/ReadyToSell/InqueryReceived';
+import ExampleReadyToBuy from '../Components/Application/Ecommerce/ReadyToBuy/Example';
 import UploadAvailableStock from '../Components/Application/Ecommerce/ReadyToSell/UploadAvailableStock';
 import UploadableStockCreate from '../Components/Application/Ecommerce/ReadyToSell/Create';
 import ProductSamples from '../Components/Application/Ecommerce/ReadyToSell/ProductSamples';
 // RFQ
 import ViewRFQ from '../Components/Application/Ecommerce/RFQ/ViewRFQ'; 
+import SubmitQuote from '../Components/Application/Ecommerce/RFQ/SubmitQuote'; 
 import ProductSampleRFQ from '../Components/Application/Ecommerce/RFQ/ProductSample'; 
 import QuoteStatus from '../Components/Application/Ecommerce/RFQ/QuoteStatus'; 
 // RFQ
@@ -179,6 +181,8 @@ import GroupBuying from '../Components/Application/Ecommerce/Buyer/GroupBuying';
 // buyer part ends
 // tech support starts
 import NewTicket from '../Components/Application/Ecommerce/Tech/NewTicket';
+import NewTicketStatus from '../Components/Application/Ecommerce/Tech/Status';
+import CreateNewTicket from '../Components/Application/Ecommerce/Tech/Create';
 import Pending from '../Components/Application/Ecommerce/Tech/Pending';
 import Closed from '../Components/Application/Ecommerce/Tech/Closed';
 // tech support ends
@@ -251,7 +255,9 @@ import PO from '../Components/Application/Ecommerce/ShippingDocuments/PO';
 import COO from '../Components/Application/Ecommerce/ShippingDocuments/COO/Index';
 import PackagingListMain from '../Components/Application/Ecommerce/PackagingListMain/Index'
 import DigitalSignature from '../Components/Application/Ecommerce/Company/DigitalSignature/Indes';
+import CreateDigitalSignature from '../Components/Application/Ecommerce/Company/DigitalSignature/create';
 import CompanySeal from '../Components/Application/Ecommerce/Company/CompanySeal/Index';
+import CreateCompanySeal from '../Components/Application/Ecommerce/Company/CompanySeal/Create';
 import CompanyDocuments from '../Components/Application/Ecommerce/Company/CompanyDocuments/Index';
 import BankDetails from '../Components/Application/Ecommerce/Company/BankDetails/Index';
 import AccountSettings from '../Components/Application/Ecommerce/Settings/AccountSettings';
@@ -396,10 +402,12 @@ export const routes = [
   { path: `${process.env.PUBLIC_URL}/app/ecommerce/checkout/:layout`, Component: <CheckOut /> },
   { path: `${process.env.PUBLIC_URL}/app/ecommerce/inquery-received/:layout`, Component: <InqueryReceived /> },
   { path: `${process.env.PUBLIC_URL}/app/ecommerce/upload-available-stock/:layout`, Component: <UploadAvailableStock /> },
+  { path: `${process.env.PUBLIC_URL}/app/ecommerce/ready-to-buy/:layout`, Component: <ExampleReadyToBuy /> },
   { path: `${process.env.PUBLIC_URL}/app/ecommerce/upload-available-product-create/:layout`, Component: <UploadableStockCreate /> },
   { path: `${process.env.PUBLIC_URL}/app/ecommerce/product-samples/:layout`, Component: <ProductSamples /> },
   // rfq
   { path: `${process.env.PUBLIC_URL}/app/ecommerce/view-rfq/:layout`, Component: <ViewRFQ /> },
+  { path: `${process.env.PUBLIC_URL}/app/ecommerce/submit-quote-rfq/:layout`, Component: <SubmitQuote /> },
   { path: `${process.env.PUBLIC_URL}/app/ecommerce/product-sample-rfq/:layout`, Component: <ProductSampleRFQ /> },
   { path: `${process.env.PUBLIC_URL}/app/ecommerce/quote-status/:layout`, Component: <QuoteStatus /> },
   // rfq
@@ -433,7 +441,9 @@ export const routes = [
   { path: `${process.env.PUBLIC_URL}/app/ecommerce/packaging-list-main/:layout`, Component: <PackagingListMain /> },
   // company
   { path: `${process.env.PUBLIC_URL}/app/ecommerce/digital-signature/:layout`, Component: <DigitalSignature /> },
+  { path: `${process.env.PUBLIC_URL}/app/ecommerce/create-digital-signature/:layout`, Component: <CreateDigitalSignature /> },
   { path: `${process.env.PUBLIC_URL}/app/ecommerce/company-seal/:layout`, Component: <CompanySeal /> },
+  { path: `${process.env.PUBLIC_URL}/app/ecommerce/create-company-seal/:layout`, Component: <CreateCompanySeal /> },
   { path: `${process.env.PUBLIC_URL}/app/ecommerce/company-documents/:layout`, Component: <CompanyDocuments /> },
   { path: `${process.env.PUBLIC_URL}/app/ecommerce/bank-details/:layout`, Component: <BankDetails /> },
   // company
@@ -456,6 +466,8 @@ export const routes = [
   // buyer route ends
   // tech support starts
   { path: `${process.env.PUBLIC_URL}/app/ecommerce/new-ticket/:layout`, Component: <NewTicket /> },
+  { path: `${process.env.PUBLIC_URL}/app/ecommerce/new-ticket-status/:layout`, Component: <NewTicketStatus /> },
+  { path: `${process.env.PUBLIC_URL}/app/ecommerce/create-new-ticket/:layout`, Component: <CreateNewTicket /> },
   { path: `${process.env.PUBLIC_URL}/app/ecommerce/pending/:layout`, Component: <Pending /> },
   { path: `${process.env.PUBLIC_URL}/app/ecommerce/closed/:layout`, Component: <Closed /> },
   // tech support ends

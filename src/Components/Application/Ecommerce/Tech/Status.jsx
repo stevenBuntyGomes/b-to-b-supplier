@@ -12,11 +12,11 @@ import { API_ENDPOINT } from '../../../../Route/Routes';
 import DataTable from 'react-data-table-component';
 // import { Row, Col, Card, CardBody, FormGroup, Label, Input } from 'reactstrap';
 // import { Default, Disabled, Checked, Option, CustomCheckbox, CheckboxStates, InlineCheckbox, SuccessState, BrandState, PrimaryState } from '../../../../';
-import { newTicketColumn, pendingTicketData } from './TicketTableList';
-// create-new-ticket
-const NewTicket = () => {
+import { ticketStatusColumn, pendingTicketData } from './TicketTableList';
+
+const Status = () => {
   return (
-    <Fragment>
+   <Fragment>
       <Breadcrumbs parent={`${API_ENDPOINT}/app/ecommerce/new-supplier/Dubai`} title="Open Ticket" mainTitle="Open Ticket" />
       <CardHeader className='pt-0'>
         <HeaderCard title="List of New Ticket." span1="" />
@@ -38,7 +38,7 @@ const NewTicket = () => {
     </CardHeader>
     <CardBody>
           <div className='table-responsive product-table'>
-              <DataTable noHeader pagination paginationServer columns={newTicketColumn} data={pendingTicketData} highlightOnHover={true} striped={true} responsive={true} />
+              <DataTable noHeader pagination paginationServer columns={ticketStatusColumn} data={pendingTicketData} highlightOnHover={true} striped={true} responsive={true} />
           </div>
           {/* <ProductTableData /> */}
       </CardBody>
@@ -46,4 +46,4 @@ const NewTicket = () => {
   )
 }
 
-export default NewTicket
+export default Status

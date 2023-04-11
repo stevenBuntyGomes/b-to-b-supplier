@@ -1,9 +1,10 @@
 import React from 'react';
 import { Btn, H6, Image } from '../../../../AbstractElements';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { FaFilePdf } from 'react-icons/fa';
-import { faDownload } from '@fortawesome/free-solid-svg-icons';
+import { FaFilePdf, FaTrash, FaPlusCircle } from 'react-icons/fa';
+import { faDownload, faFile, faPlusCircle, faTrash } from '@fortawesome/free-solid-svg-icons';
 import { Input, Label } from 'reactstrap';
+
 
 const style = {
   width: 40,
@@ -19,13 +20,176 @@ export const data = [
 
       </div>
     ),
-    qc_testing: (
+    credit_debit: (
       <div>
-        <img style = {{ width: "50px", height: "50px", BorderRadius: "50%" }} className = "rounded-circle" alt = "" src = 'https://t4.ftcdn.net/jpg/05/19/34/27/360_F_519342702_M65Z47ULYsAcaYky7RGoWLHlv54pSoWR.jpg' />
+        <p>Debit</p>
+
+      </div>
+    ),
+    create_date: (
+      <div>
+        <p>02/05/2022</p>
+
+      </div>
+    ),
+    incorporation_document: (
+      <div>
+        <FontAwesomeIcon icon = {faFile}/>
+
+      </div>
+    ),
+    company_broucher: (
+      <div>
+        <FontAwesomeIcon icon = {faFile}/>
+
+      </div>
+    ),
+    gst: (
+      <div>
+        <FontAwesomeIcon icon = {faFile}/>
+
+      </div>
+    ),
+    import_export_lisence: (
+      <div>
+        <FontAwesomeIcon icon = {faFile}/>
+
+      </div>
+    ),
+    other_documents: (
+      <div>
+        <FontAwesomeIcon icon = {faFile}/>
+
+      </div>
+    ),
+    certificates: (
+      <div>
+        <FontAwesomeIcon icon = {faFile}/>
+
+      </div>
+    ),
+    seal_type: (
+      <div>
+        <p>FOR SEAL</p>
+
+      </div>
+    ),
+    last_updated_date: (
+      <div>
+        <p>02/05/2022</p>
+
+      </div>
+    ),
+    company_name: (
+      <div>
+        <p>PlasticCity</p>
+
+      </div>
+    ),
+    signature_authority_name: (
+      <div>
+        <p>Srinath Chowdappa</p>
+
+      </div>
+    ),
+    designation: (
+      <div>
+        <p>Co-Founder</p>
+
+      </div>
+    ),
+    company_legal_name: (
+      <div>
+        <p>Plasticcity Packaging Export India PVT LTD</p>
+
+      </div>
+    ),
+    total_amount: (
+      <div>
+        <p>INR 125689.00</p>
+
+      </div>
+    ),
+    transaction_type: (
+      <div>
+        <p>Domestic</p>
+
+      </div>
+    ),
+    invoice: (
+      <div>
+        <FontAwesomeIcon icon = {faFile}/>
+
+      </div>
+    ),
+    invoice_amount: (
+      <div>
+        <p>5.9</p>
+
+      </div>
+    ),
+    vendor: (
+      <div>
+        <p>COMPRO01022022BLR</p>
+
+      </div>
+    ),
+    sl_no: (
+      <div>
+        <Input className="form-control" type="text"/>
+
+      </div>
+    ),
+    package_description: (
+      <div>
+        <Input className="form-control" type="text"/>
+
+      </div>
+    ),
+    description_of_goods: (
+      <div>
+        <Input className="form-control" type="text"/>
+
+      </div>
+    ),
+    action_input: (
+      <div>
+        <FontAwesomeIcon icon = {faTrash}/>
+        <FontAwesomeIcon icon = {faPlusCircle}/>
+
+      </div>
+    ),
+    total: (
+      <div>
+        <Input className="form-control" type="text"/>
+
+      </div>
+    ),
+    unit_price_input: (
+      <div>
+        <Input className="form-control" type="text"/>
+
+      </div>
+    ),
+    uom: (
+      <div>
+        <Input className="form-control" type="text"/>
+
+      </div>
+    ),
+    table_qty: (
+      <div>
+        <Input className="form-control" type="text"/>
 
       </div>
     ),
     rfq_date: (
+      <div>
+        <p>01/01/2022</p>
+
+      </div>
+    ),
+    pi_date: (
       <div>
         <p>01/01/2022</p>
 
@@ -376,9 +540,117 @@ export const data = [
 
       </div>
     ),
-    qc_testing: (
+    credit_debit: (
       <div>
-        <img style = {{ width: "50px", height: "50px", BorderRadius: "50%" }} className = "rounded-circle" alt = "" src = 'https://t4.ftcdn.net/jpg/05/19/34/27/360_F_519342702_M65Z47ULYsAcaYky7RGoWLHlv54pSoWR.jpg' />
+        <p>Debit</p>
+
+      </div>
+    ),
+    company_name: (
+      <div>
+        <p>PlasticCity</p>
+
+      </div>
+    ),
+    incorporation_document: (
+      <div>
+        <FontAwesomeIcon icon = {faFile}/>
+
+      </div>
+    ),
+    company_broucher: (
+      <div>
+        <FontAwesomeIcon icon = {faFile}/>
+
+      </div>
+    ),
+    import_export_lisence: (
+      <div>
+        <FontAwesomeIcon icon = {faFile}/>
+
+      </div>
+    ),
+    other_documents: (
+      <div>
+        <FontAwesomeIcon icon = {faFile}/>
+
+      </div>
+    ),
+    gst: (
+      <div>
+        <FontAwesomeIcon icon = {faFile}/>
+
+      </div>
+    ),
+    certificates: (
+      <div>
+        <FontAwesomeIcon icon = {faFile}/>
+
+      </div>
+    ),
+    seal_type: (
+      <div>
+        <p>FOR SEAL</p>
+
+      </div>
+    ),
+    create_date: (
+      <div>
+        <p>02/05/2022</p>
+
+      </div>
+    ),
+    last_updated_date: (
+      <div>
+        <p>02/05/2022</p>
+
+      </div>
+    ),
+    company_legal_name: (
+      <div>
+        <p>Plasticcity Packaging Export India PVT LTD</p>
+
+      </div>
+    ),
+    signature_authority_name: (
+      <div>
+        <p>Srinath Chowdappa</p>
+
+      </div>
+    ),
+    designation: (
+      <div>
+        <p>Co-Founder</p>
+
+      </div>
+    ),
+    total_amount: (
+      <div>
+        <p>INR 125689.00</p>
+
+      </div>
+    ),
+    transaction_type: (
+      <div>
+        <p>International</p>
+
+      </div>
+    ),
+    invoice: (
+      <div>
+        <FontAwesomeIcon icon = {faFile}/>
+
+      </div>
+    ),
+    vendor: (
+      <div>
+        <p>COMPRO01022022BLR</p>
+
+      </div>
+    ),
+    invoice_amount: (
+      <div>
+        <p>5.9</p>
 
       </div>
     ),
@@ -728,51 +1000,273 @@ export const data = [
 
 ];
 
+export const legalDocumentColumn = [
 
-export const ongoingProjectColumn = [
+  {
+    name: 'Company Name.',
+    selector: (row) => row.company_name,
+    sortable: true,
+    center: false,
+    // wrap: true,
+    minWidth: '400px',
+  },
+  {
+    name: 'Incorporation Document',
+    selector: (row) => row.incorporation_document,
+    sortable: true,
+    center: false,
+    // wrap: true,
+    minWidth: '400px',
+  },
+  {
+    name: '		GST',
+    selector: (row) => row.gst,
+    sortable: true,
+    center: false,
+    // wrap: true,
+    minWidth: '400px',
+  },
+  {
+    name: '	Certificates',
+    selector: (row) => row.certificates,
+    sortable: true,
+    center: false,
+    // wrap: true,
+    minWidth: '400px',
+  },
+  {
+    name: 'Import Export Licence',
+    selector: (row) => row.import_export_lisence,
+    sortable: true,
+    center: false,
+    // wrap: true,
+    minWidth: '400px',
+  },
+  {
+    name: 'Company Brochure',
+    selector: (row) => row.company_broucher,
+    sortable: true,
+    center: false,
+    // wrap: true,
+    minWidth: '400px',
+  },
+  {
+    name: 'Other Documents	',
+    selector: (row) => row.other_documents,
+    sortable: true,
+    center: false,
+    // wrap: true,
+    minWidth: '400px',
+  },
+  {
+    name: 'Create Date	',
+    selector: (row) => row.create_date,
+    sortable: true,
+    center: false,
+    // wrap: true,
+    minWidth: '400px',
+  },
+  {
+    name: 'Last Updated Date	',
+    selector: (row) => row.last_updated_date,
+    sortable: true,
+    center: false,
+    // wrap: true,
+    minWidth: '400px',
+  },
+  {
+    name: 'Notes',
+    selector: (row) => row.notes,
+    sortable: true,
+    center: false,
+    // wrap: true,
+    minWidth: '400px',
+  },
+  {
+    name: 'Status',
+    selector: (row) => row.status,
+    sortable: true,
+    center: false,
+    // wrap: true,
+    minWidth: '400px',
+  },
+  {
+    name: 'Action',
+    selector: (row) => row.action2,
+    sortable: true,
+    center: false,
+    // wrap: true,
+    minWidth: '400px',
+  },
+];
+
+export const companySealColumn = [
 
   {
-    name: 'Rfq ID',
-    selector: (row) => row.ref_id,
+    name: 'Company Name.',
+    selector: (row) => row.company_name,
     sortable: true,
     center: false,
     // wrap: true,
     minWidth: '400px',
   },
   {
-    name: '	Quote ID',
-    selector: (row) => row.quote_id,
+    name: '	Company Leagal Name',
+    selector: (row) => row.company_legal_name,
     sortable: true,
     center: false,
     // wrap: true,
     minWidth: '400px',
   },
   {
-    name: '	Quote Reference No',
-    selector: (row) => row.quote_ref_no,
+    name: '	Seal Type',
+    selector: (row) => row.seal_type,
     sortable: true,
     center: false,
     // wrap: true,
     minWidth: '400px',
   },
   {
-    name: '	Rfq Date.',
-    selector: (row) => row.rfq_date,
+    name: '	Create Date',
+    selector: (row) => row.create_date,
     sortable: true,
     center: false,
     // wrap: true,
     minWidth: '400px',
   },
   {
-    name: '	PI No.',
-    selector: (row) => row.pi,
+    name: 'Last Updated Date',
+    selector: (row) => row.last_updated_date,
     sortable: true,
     center: false,
     // wrap: true,
     minWidth: '400px',
   },
   {
-    name: '	PO No',
+    name: 'Seal',
+    selector: (row) => row.image,
+    sortable: true,
+    center: false,
+    // wrap: true,
+    minWidth: '400px',
+  },
+  {
+    name: 'Notes',
+    selector: (row) => row.notes,
+    sortable: true,
+    center: false,
+    // wrap: true,
+    minWidth: '400px',
+  },
+  {
+    name: 'Status',
+    selector: (row) => row.status,
+    sortable: true,
+    center: false,
+    // wrap: true,
+    minWidth: '400px',
+  },
+  {
+    name: 'Action',
+    selector: (row) => row.action2,
+    sortable: true,
+    center: false,
+    // wrap: true,
+    minWidth: '400px',
+  },
+];
+
+
+
+export const digitalSignatureColumn = [
+
+  {
+    name: 'Company Name.',
+    selector: (row) => row.company_name,
+    sortable: true,
+    center: false,
+    // wrap: true,
+    minWidth: '400px',
+  },
+  {
+    name: '	Company Leagal Name',
+    selector: (row) => row.company_legal_name,
+    sortable: true,
+    center: false,
+    // wrap: true,
+    minWidth: '400px',
+  },
+  {
+    name: '	Signature Authority Name.',
+    selector: (row) => row.signature_authority_name,
+    sortable: true,
+    center: false,
+    // wrap: true,
+    minWidth: '400px',
+  },
+  {
+    name: '	Designation',
+    selector: (row) => row.designation,
+    sortable: true,
+    center: false,
+    // wrap: true,
+    minWidth: '400px',
+  },
+  {
+    name: '	Create Date',
+    selector: (row) => row.create_date,
+    sortable: true,
+    center: false,
+    // wrap: true,
+    minWidth: '400px',
+  },
+  {
+    name: 'Last Updated Date',
+    selector: (row) => row.last_updated_date,
+    sortable: true,
+    center: false,
+    // wrap: true,
+    minWidth: '400px',
+  },
+  {
+    name: 'Signature',
+    selector: (row) => row.image,
+    sortable: true,
+    center: false,
+    // wrap: true,
+    minWidth: '400px',
+  },
+  {
+    name: 'Notes',
+    selector: (row) => row.notes,
+    sortable: true,
+    center: false,
+    // wrap: true,
+    minWidth: '400px',
+  },
+  {
+    name: 'Status',
+    selector: (row) => row.status,
+    sortable: true,
+    center: false,
+    // wrap: true,
+    minWidth: '400px',
+  },
+  {
+    name: 'Action',
+    selector: (row) => row.action2,
+    sortable: true,
+    center: false,
+    // wrap: true,
+    minWidth: '400px',
+  },
+];
+
+
+export const debitNotesColumn = [
+
+  {
+    name: 'PO No.',
     selector: (row) => row.po,
     sortable: true,
     center: false,
@@ -780,7 +1274,39 @@ export const ongoingProjectColumn = [
     minWidth: '400px',
   },
   {
-    name: 'Awarded Date',
+    name: 'PO Date',
+    selector: (row) => row.pi_date,
+    sortable: true,
+    center: false,
+    // wrap: true,
+    minWidth: '400px',
+  },
+  {
+    name: '	Invoice No',
+    selector: (row) => row.pi,
+    sortable: true,
+    center: false,
+    // wrap: true,
+    minWidth: '400px',
+  },
+  {
+    name: 'Invoice Date',
+    selector: (row) => row.pi_date,
+    sortable: true,
+    center: false,
+    // wrap: true,
+    minWidth: '400px',
+  },
+  {
+    name: 'Credit Or Debit',
+    selector: (row) => row.credit_debit,
+    sortable: true,
+    center: false,
+    // wrap: true,
+    minWidth: '400px',
+  },
+  {
+    name: '	Created Date',
     selector: (row) => row.awarded_date,
     sortable: true,
     center: false,
@@ -788,55 +1314,59 @@ export const ongoingProjectColumn = [
     minWidth: '400px',
   },
   {
-    name: 'Lead Time',
-    selector: (row) => row.lead_time,
+    name: '	Last Update',
+    selector: (row) => row.rfq_date,
     sortable: true,
     center: false,
     // wrap: true,
     minWidth: '400px',
   },
   {
-    name: '	ETC',
-    selector: (row) => row.etc,
+    name: '	Transaction Type',
+    selector: (row) => row.transaction_type,
     sortable: true,
     center: false,
     // wrap: true,
     minWidth: '400px',
   },
   {
-    name: '	ETD',
-    selector: (row) => row.etd,
+    name: 'Total Amount',
+    selector: (row) => row.total_amount,
     sortable: true,
     center: false,
     // wrap: true,
     minWidth: '400px',
   },
   {
-    name: '	ETA',
-    selector: (row) => row.eta,
+    name: 'Description',
+    selector: (row) => row.description,
+    sortable: true,
+    center: false,
+    // wrap: true,
+    minWidth: '400px',
+  },
+
+  {
+    name: 'Action',
+    selector: (row) => row.action2,
+    sortable: true,
+    center: false,
+    // wrap: true,
+    minWidth: '400px',
+  },
+];
+export const poColumn = [
+
+  {
+    name: 'PO NO#',
+    selector: (row) => row.po,
     sortable: true,
     center: false,
     // wrap: true,
     minWidth: '400px',
   },
   {
-    name: 'Qty',
-    selector: (row) => row.qty,
-    sortable: true,
-    center: false,
-    // wrap: true,
-    minWidth: '400px',
-  },
-  {
-    name: 'Unit Price',
-    selector: (row) => row.unit_price,
-    sortable: true,
-    center: false,
-    // wrap: true,
-    minWidth: '400px',
-  },
-  {
-    name: 'Product Name',
+    name: 'Product',
     selector: (row) => row.product,
     sortable: true,
     center: false,
@@ -844,68 +1374,15 @@ export const ongoingProjectColumn = [
     minWidth: '400px',
   },
   {
-    name: 'Comments',
-    selector: (row) => row.comments,
+    name: '	Product Description',
+    selector: (row) => row.product_description,
     sortable: true,
     center: false,
     // wrap: true,
     minWidth: '400px',
   },
   {
-    name: 'Status',
-    selector: (row) => row.status,
-    sortable: true,
-    center: false,
-    // wrap: true,
-    minWidth: '400px',
-  },
-  {
-    name: 'Action',
-    selector: (row) => row.action,
-    sortable: true,
-    center: false,
-    // wrap: true,
-    minWidth: '400px',
-  },
-];
-
-export const canceledProjectColumn = [
-
-  {
-    name: 'Rfq ID',
-    selector: (row) => row.ref_id,
-    sortable: true,
-    center: false,
-    // wrap: true,
-    minWidth: '400px',
-  },
-  {
-    name: '	Quote ID',
-    selector: (row) => row.quote_id,
-    sortable: true,
-    center: false,
-    // wrap: true,
-    minWidth: '400px',
-  },
-
-  {
-    name: 'Lead Time',
-    selector: (row) => row.lead_time,
-    sortable: true,
-    center: false,
-    // wrap: true,
-    minWidth: '400px',
-  },
-    {
-    name: 'Start Date',
-    selector: (row) => row.awarded_date,
-    sortable: true,
-    center: false,
-    // wrap: true,
-    minWidth: '400px',
-  },
-    {
-    name: 'End Date',
+    name: '	Project Awarded Date',
     selector: (row) => row.awarded_date,
     sortable: true,
     center: false,
@@ -913,235 +1390,23 @@ export const canceledProjectColumn = [
     minWidth: '400px',
   },
   {
-    name: '	ETC',
-    selector: (row) => row.etc,
-    sortable: true,
-    center: false,
-    // wrap: true,
-    minWidth: '400px',
-  },
-  {
-    name: '	ETD',
-    selector: (row) => row.etd,
-    sortable: true,
-    center: false,
-    // wrap: true,
-    minWidth: '400px',
-  },
-  {
-    name: '	ETA',
-    selector: (row) => row.eta,
-    sortable: true,
-    center: false,
-    // wrap: true,
-    minWidth: '400px',
-  },
-  {
-    name: 'Qty',
-    selector: (row) => row.qty,
+    name: '	Completion Date',
+    selector: (row) => row.completion_date,
     sortable: true,
     center: false,
     // wrap: true,
     minWidth: '400px',
   },
     {
-    name: 'Canceled Date',
-    selector: (row) => row.awarded_date,
-    sortable: true,
-    center: false,
-    // wrap: true,
-    minWidth: '400px',
-  },
-    {
-    name: 'Reason',
-    selector: (row) => row.comments,
-    sortable: true,
-    center: false,
-    // wrap: true,
-    minWidth: '400px',
-  },
+      name: '	Lead Time',
+      selector: (row) => row.lead_time,
+      sortable: true,
+      center: false,
+      // wrap: true,
+      minWidth: '400px',
+    },
   {
-    name: 'Status',
-    selector: (row) => row.status,
-    sortable: true,
-    center: false,
-    // wrap: true,
-    minWidth: '400px',
-  },
-  {
-    name: 'Action',
-    selector: (row) => row.action,
-    sortable: true,
-    center: false,
-    // wrap: true,
-    minWidth: '400px',
-  },
-];
-
-export const statusProjectColumn = [
-
-  {
-    name: 'Rfq ID',
-    selector: (row) => row.ref_id,
-    sortable: true,
-    center: false,
-    // wrap: true,
-    minWidth: '400px',
-  },
-  {
-    name: '	Quote ID',
-    selector: (row) => row.quote_id,
-    sortable: true,
-    center: false,
-    // wrap: true,
-    minWidth: '400px',
-  },
-
-  {
-    name: 'Lead Time',
-    selector: (row) => row.lead_time,
-    sortable: true,
-    center: false,
-    // wrap: true,
-    minWidth: '400px',
-  },
-    {
-    name: 'Start Date',
-    selector: (row) => row.awarded_date,
-    sortable: true,
-    center: false,
-    // wrap: true,
-    minWidth: '400px',
-  },
-    {
-    name: 'End Date',
-    selector: (row) => row.awarded_date,
-    sortable: true,
-    center: false,
-    // wrap: true,
-    minWidth: '400px',
-  },
-  {
-    name: '	ETC',
-    selector: (row) => row.etc,
-    sortable: true,
-    center: false,
-    // wrap: true,
-    minWidth: '400px',
-  },
-  {
-    name: 'Status',
-    selector: (row) => row.status,
-    sortable: true,
-    center: false,
-    // wrap: true,
-    minWidth: '400px',
-  },
-    {
-    name: '	QC Testing',
-    selector: (row) => row.qc_testing,
-    sortable: true,
-    center: false,
-    // wrap: true,
-    minWidth: '400px',
-  },
-    {
-    name: '	Packing',
-    selector: (row) => row.image,
-    sortable: true,
-    center: false,
-    // wrap: true,
-    minWidth: '400px',
-  },
-    {
-    name: 'Ready To Dispatch',
-    selector: (row) => row.dispatch,
-    sortable: true,
-    center: false,
-    // wrap: true,
-    minWidth: '400px',
-  },
-  
-  {
-    name: 'Action',
-    selector: (row) => row.action2,
-    sortable: true,
-    center: false,
-    // wrap: true,
-    minWidth: '400px',
-  },
-];
-
-
-
-export const createQuoteColumn = [
-
-  {
-    name: 'Rfq ID',
-    selector: (row) => row.ref_id,
-    sortable: true,
-    center: false,
-    // wrap: true,
-    minWidth: '400px',
-  },
-  {
-    name: '	Quote ID',
-    selector: (row) => row.quote_id,
-    sortable: true,
-    center: false,
-    // wrap: true,
-    minWidth: '400px',
-  },
-  {
-    name: '	Quote Reference No',
-    selector: (row) => row.quote_ref_no,
-    sortable: true,
-    center: false,
-    // wrap: true,
-    minWidth: '400px',
-  },
-  {
-    name: 'Start Date',
-    selector: (row) => row.awarded_date,
-    sortable: true,
-    center: false,
-    // wrap: true,
-    minWidth: '400px',
-  },
-  {
-    name: 'Lead Time',
-    selector: (row) => row.lead_time,
-    sortable: true,
-    center: false,
-    // wrap: true,
-    minWidth: '400px',
-  },
-  {
-    name: '	ETC',
-    selector: (row) => row.etc,
-    sortable: true,
-    center: false,
-    // wrap: true,
-    minWidth: '400px',
-  },
-  {
-    name: '	ETD',
-    selector: (row) => row.etd,
-    sortable: true,
-    center: false,
-    // wrap: true,
-    minWidth: '400px',
-  },
-  {
-    name: '	ETA',
-    selector: (row) => row.eta,
-    sortable: true,
-    center: false,
-    // wrap: true,
-    minWidth: '400px',
-  },
-  {
-    name: 'Qty',
+    name: '	QTY',
     selector: (row) => row.qty,
     sortable: true,
     center: false,
@@ -1149,8 +1414,32 @@ export const createQuoteColumn = [
     minWidth: '400px',
   },
   {
+    name: 'Order Type',
+    selector: (row) => row.order_type,
+    sortable: true,
+    center: false,
+    // wrap: true,
+    minWidth: '400px',
+  },
+  {
+    name: 'Payment Terms',
+    selector: (row) => row.payment_terms,
+    sortable: true,
+    center: false,
+    // wrap: true,
+    minWidth: '400px',
+  },
+  {
+    name: 'Total PO Ammount',
+    selector: (row) => row.total_amount,
+    sortable: true,
+    center: false,
+    // wrap: true,
+    minWidth: '400px',
+  },
+  {
     name: 'Status',
-    selector: (row) => row.status2,
+    selector: (row) => row.status,
     sortable: true,
     center: false,
     // wrap: true,
@@ -1166,6 +1455,253 @@ export const createQuoteColumn = [
   },
 ];
 
+
+export const inputColumn = [
+     {
+      name: 'SL. NO.',
+      selector: (row) => row.sl_no,
+      sortable: true,
+      center: false,
+      // wrap: true,
+    },
+     {
+      name: 'Package Description',
+      selector: (row) => row.package_description,
+      sortable: true,
+      center: false,
+      // wrap: true,
+      minWidth: '400px',
+    },
+     {
+      name: 'Description of Goods',
+      selector: (row) => row.description_of_goods,
+      sortable: true,
+      center: false,
+      // wrap: true,
+      minWidth: '400px',
+    },
+     {
+      name: 'Qty.',
+      selector: (row) => row.table_qty,
+      sortable: true,
+      center: false,
+      // wrap: true,
+      minWidth: '400px',
+    },
+     {
+      name: 'UOM.',
+      selector: (row) => row.uom,
+      sortable: true,
+      center: false,
+      // wrap: true,
+      minWidth: '400px',
+    },
+     {
+      name: 'Unit Price.',
+      selector: (row) => row.unit_price_input,
+      sortable: true,
+      center: false,
+      // wrap: true,
+      minWidth: '400px',
+    },
+     {
+      name: 'Total.',
+      selector: (row) => row.total,
+      sortable: true,
+      center: false,
+      // wrap: true,
+      minWidth: '400px',
+    },
+     {
+      name: 'Action',
+      selector: (row) => row.action_input,
+      sortable: true,
+      center: false,
+      // wrap: true,
+      minWidth: '400px',
+    },
+];
+
+
+export const traxInvoiceColumn = [
+
+  {
+    name: 'Vendor',
+    selector: (row) => row.vendor,
+    sortable: true,
+    center: false,
+    // wrap: true,
+    minWidth: '400px',
+  },
+  {
+    name: 'Location',
+    selector: (row) => row.location,
+    sortable: true,
+    center: false,
+    // wrap: true,
+    minWidth: '400px',
+  },
+  {
+    name: '	PI#',
+    selector: (row) => row.pi,
+    sortable: true,
+    center: false,
+    // wrap: true,
+    minWidth: '400px',
+  },
+  {
+    name: '	PO#',
+    selector: (row) => row.po,
+    sortable: true,
+    center: false,
+    // wrap: true,
+    minWidth: '400px',
+  },
+  {
+    name: '	PO Date',
+    selector: (row) => row.pi_date,
+    sortable: true,
+    center: false,
+    // wrap: true,
+    minWidth: '400px',
+  },
+  {
+    name: '	Invoice',
+    selector: (row) => row.invoice,
+    sortable: true,
+    center: false,
+    // wrap: true,
+    minWidth: '400px',
+  },
+  {
+    name: '	Project Awarded Date',
+    selector: (row) => row.awarded_date,
+    sortable: true,
+    center: false,
+    // wrap: true,
+    minWidth: '400px',
+  },
+  {
+    name: 'Complition Date',
+    selector: (row) => row.awarded_date,
+    sortable: true,
+    center: false,
+    // wrap: true,
+    minWidth: '400px',
+  },
+  {
+    name: 'Lead Time',
+    selector: (row) => row.lead_time,
+    sortable: true,
+    center: false,
+    // wrap: true,
+    minWidth: '400px',
+  },
+  {
+    name: '	QTY',
+    selector: (row) => row.qty,
+    sortable: true,
+    center: false,
+    // wrap: true,
+    minWidth: '400px',
+  },
+  {
+    name: '	Order Type',
+    selector: (row) => row.order_type,
+    sortable: true,
+    center: false,
+    // wrap: true,
+    minWidth: '400px',
+  },
+  {
+    name: 'Payment Terms',
+    selector: (row) => row.payment_terms,
+    sortable: true,
+    center: false,
+    // wrap: true,
+    minWidth: '400px',
+  },
+  {
+    name: 'Ex Work Price',
+    selector: (row) => row.work_price,
+    sortable: true,
+    center: false,
+    // wrap: true,
+    minWidth: '400px',
+  },
+  {
+    name: '	FOB',
+    selector: (row) => row.fob,
+    sortable: true,
+    center: false,
+    // wrap: true,
+    minWidth: '400px',
+  },
+  {
+    name: '	CIF',
+    selector: (row) => row.cif,
+    sortable: true,
+    center: false,
+    // wrap: true,
+    minWidth: '400px',
+  },
+  {
+    name: '	Tax %',
+    selector: (row) => row.tax,
+    sortable: true,
+    center: false,
+    // wrap: true,
+    minWidth: '400px',
+  },
+  {
+    name: 'Transportation',
+    selector: (row) => row.transportation,
+    sortable: true,
+    center: false,
+    // wrap: true,
+    minWidth: '400px',
+  },
+  {
+    name: 'Origin',
+    selector: (row) => row.origin,
+    sortable: true,
+    center: false,
+    // wrap: true,
+    minWidth: '400px',
+  },
+  {
+    name: 'Destination',
+    selector: (row) => row.destination,
+    sortable: true,
+    center: false,
+    // wrap: true,
+    minWidth: '400px',
+  },
+  {
+    name: 'Total Invoice Ammount',
+    selector: (row) => row.total_amount,
+    sortable: true,
+    center: false,
+    // wrap: true,
+    minWidth: '400px',
+  },
+  {
+    name: 'Status',
+    selector: (row) => row.status,
+    sortable: true,
+    center: false,
+    // wrap: true,
+    minWidth: '400px',
+  },
+  {
+    name: 'Action',
+    selector: (row) => row.action2,
+    sortable: true,
+    center: false,
+    // wrap: true,
+    minWidth: '400px',
+  },
+];
 
 
 

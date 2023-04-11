@@ -33,7 +33,6 @@ const TaxInvoice = () => {
                                 <Btn attrBtn={{ color: "success", className: "m-r-15", type: "submit" }} >
                                     <FontAwesomeIcon className='me-2' icon={faEnvelope}/> E-mail Invoice
                                 </Btn>
-                                <p>Check box the option to display the results in the grid. By default new supplier list will be displayed</p>
                                 <Row>
                                     <Col xl = "8">
                                     </Col>

@@ -32,14 +32,20 @@ const Leftbar = () => {
 
   const responsive_openCloseSidebar = (toggle) => {
     if (width <= 991) {
-      document.querySelector('.page-header').className = 'page-header';
-      document.querySelector('.sidebar-wrapper').className = 'sidebar-wrapper ';
-      document.querySelector('.bg-overlay').classList.add('active');
+      console.log(document.querySelector('.sidebar-wrapper'));
+      console.log(document.querySelector('.page-header'));
+      // console.log(document.querySelector('.bg-overlay'));
+      if(document.querySelector('.sidebar-wrapper') && document.querySelector('.page-header')){
+        document.querySelector('.page-header').className = 'page-header';
+        document.querySelector('.sidebar-wrapper').className = 'sidebar-wrapper';
+        document.querySelector('.bg-overlay1').classList.add('active');
+      }
+
     } else {
       if (toggle) {
         setSidebartoggle(!toggle);
         document.querySelector('.page-header').className = 'page-header close_icon';
-        document.querySelector('.sidebar-wrapper').className = 'sidebar-wrapper close_icon ';
+        document.querySelector('.sidebar-wrapper').className = 'sidebar-wrapper close_icon';
         document.querySelector('.mega-menu-container').classList.remove('d-block');
       } else {
         setSidebartoggle(!toggle);

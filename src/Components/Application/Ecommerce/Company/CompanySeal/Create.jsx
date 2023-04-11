@@ -12,47 +12,47 @@ import Table from '../Table';
 import Data from '../Data';
 import { piColumn, data, inputColumn } from '../Data';
 
-const create = () => {
+const Create = () => {
   return (
     <Fragment>
-        <Breadcrumbs parent="Ecommerce" title="Digital Signature" mainTitle="Digital Signature" />
+        <Breadcrumbs parent="Ecommerce" title="Seal" mainTitle="Seal" />
         <Container fluid={true}>
                 <Row>
                     <Col sm="12">
                         <Card>
-                            <HeaderCard title="Manager your company digital signature." />
+                            <HeaderCard title="Create your company digital seal." />
                             <Form className="form theme-form">
                                 <CardBody>
                                     <Row>
                                         <Col xl = '6'>
                                             <FormGroup>
-                                                <Label htmlFor="exampleFormControlInput1">Company Display Name</Label>
-                                                <Input className="form-control" type="text" placeholder="Company Display Name" />
-                                            </FormGroup>
-                                        </Col>
-                                        <Col xl = '6'>
-                                            <FormGroup>
-                                                <Label htmlFor="exampleFormControlInput1">Company Legal Name</Label>
-                                                <Input className="form-control" type="text" placeholder="Company Legal Name" />
-                                            </FormGroup>
-                                        </Col>
-                                    </Row>
-                                    <Row>
-                                        <Col xl = '6'>
-                                            <FormGroup>
-                                                <Label htmlFor="exampleFormControlInput1">Authorized Signatory Name</Label>
-                                                <Input className="form-control" type="text" placeholder="Authorized Signatory Name" />
-                                            </FormGroup>
-                                        </Col>
-                                        <Col xl = '6'>
-                                            <FormGroup>
-                                                <Label htmlFor="exampleFormControlSelect9">Designation</Label>
+                                                <Label htmlFor="exampleFormControlInput1">Select Seal Type</Label>
                                                 <Input type="select" name="select" className="form-control digits" defaultValue="1">
                                                     <option>{'CEO'}</option>
                                                     <option>{'Co_Founder'}</option>
                                                     <option>{'Finance'}</option>
                                                     <option>{'Logistic'}</option>
                                                 </Input>
+                                            </FormGroup>
+                                        </Col>
+                                        <Col xl = '6'>
+                                            <FormGroup>
+                                                <Label htmlFor="exampleFormControlInput1">Company Display Name</Label>
+                                                <Input className="form-control" type="text" placeholder="Company Display Name" />
+                                            </FormGroup>
+                                        </Col>
+                                    </Row>
+                                    <Row>
+                                        <Col xl = '6'>
+                                            <FormGroup>
+                                                <Label htmlFor="exampleFormControlInput1"></Label>
+                                                <Input className="form-control" type="text" placeholder="Authorized Signatory Name" />
+                                            </FormGroup>
+                                        </Col>
+                                        <Col xl = '6'>
+                                            <FormGroup>
+                                                <Label htmlFor="exampleFormControlSelect9">Company Legal Name</Label>
+                                                <Input className="form-control" type="text" placeholder="Company Legal Name" />
                                             </FormGroup>
                                         </Col>
                                     </Row>
@@ -109,4 +109,4 @@ const create = () => {
   )
 }
 
-export default create
+export default Create

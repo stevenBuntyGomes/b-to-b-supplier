@@ -3,7 +3,7 @@ import { Breadcrumbs } from '../../../../../AbstractElements';
 import { ProductListDesc, ProductListTitle } from '../../../../../Constant';
 import Table from '../Table';
 import {piColumn, data} from '../Data'
-import { Card, CardBody, Col, Container, Row, CardHeader , Label, Input, FormGroup} from 'reactstrap';
+import { Card, CardBody, Col, Container, Row, CardHeader , Label, Input, FormGroup } from 'reactstrap';
 import HeaderCard from '../../../../Common/Component/HeaderCard';
 // import {Btn} from '../../../AbstractElements'
 import {Btn} from '../../../../../AbstractElements'
@@ -34,7 +34,6 @@ const PI = () => {
                                 <Btn attrBtn={{ color: "success", className: "m-r-15", type: "submit" }} >
                                     <FontAwesomeIcon className='me-2' icon={faEnvelope}/> Publish PI
                                 </Btn>
-                                <p>Check box the option to display the results in the grid. By default new supplier list will be displayed</p>
                                 <Row>
                                     <Col xl = "8">
                                     </Col>

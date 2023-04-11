@@ -45,15 +45,15 @@ const ProductSample = () => {
                                                 </Label>
                                             </div>
                                             <div className='checkbox checkbox-dark'>
-                                                <Input id='inline-1' type='checkbox' defaultChecked />
-                                                <Label for='inline-1'>
+                                                <Input id='inline-2' type='checkbox' defaultChecked />
+                                                <Label for='inline-2'>
                                                 {Option}
                                                 <span className='digits bg-danger p-2 rounded'> {'Canceled'}</span>
                                                 </Label>
                                             </div>
                                             <div className='checkbox checkbox-dark'>
-                                                <Input id='inline-1' type='checkbox' defaultChecked />
-                                                <Label for='inline-1'>
+                                                <Input id='inline-3' type='checkbox' defaultChecked />
+                                                <Label for='inline-3'>
                                                 {Option}
                                                 <span className='digits bg-warning p-2 rounded'> {'Pending'}</span>
                                                 </Label>

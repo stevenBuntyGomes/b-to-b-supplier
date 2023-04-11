@@ -21,8 +21,6 @@ const QuoteStatus = () => {
                         <Card>
                             <HeaderCard title="Check your quote status." span1="Check your quote status." />
                             <CardHeader className='mt-0'>
-
-                                <p>Check box the option to display the results in the grid. By default new supplier list will be displayed</p>
                                 <Row>
                                     <Col xl = "8">
                                       

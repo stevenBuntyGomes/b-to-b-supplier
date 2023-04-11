@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import { Breadcrumbs } from '../../../../../AbstractElements';
 import { ProductListDesc, ProductListTitle } from '../../../../../Constant';
 import Table from '../Table';
-import {piColumn, data} from '../Data'
+import {traxInvoiceColumn, data} from '../Data'
 import { Card, CardBody, Col, Container, Row, CardHeader , Label, Input, FormGroup} from 'reactstrap';
 import HeaderCard from '../../../../Common/Component/HeaderCard';
 // import {Btn} from '../../../AbstractElements'
@@ -46,7 +46,7 @@ const COO = () => {
                             </CardHeader>
                             
                             <CardBody>
-                                <Table columns = {piColumn} data = {data} />
+                                <Table columns = {traxInvoiceColumn} data = {data} />
                             </CardBody>
                         </Card>
                     </Col>

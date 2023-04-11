@@ -25,7 +25,7 @@ const InqueryReceived = () => {
                                   <h1>Verified Buyers</h1>
                                   <h1 className = "text-success">Verified</h1><span>An "ABC Verified Purchase"</span>
                                 </div>
-                                <p>Check box the option to display the results in the grid. By default new supplier list will be displayed</p>
+                                
                                 <Row>
                                     <Col xl = "8">
                                     </Col>
